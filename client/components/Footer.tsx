@@ -6,7 +6,7 @@ import {
   Send,
 } from "lucide-react";
 import { useState } from "react";
-import logoPetvet from "@/assets/logo-petvet.png";
+import logoPetvetDark from "@/assets/logo-petvet-dark.png";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -134,9 +134,9 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-3">
               <img 
-                src={logoPetvet} 
+                src={logoPetvetDark} 
                 alt="Logo PetVet" 
-                className="w-8 h-8 object-contain"
+                className="w-12 h-12 object-contain"
               />
               <div className="font-body text-sm opacity-80">
                 <p>© {new Date().getFullYear()} PetVet Clínica Veterinária. Todos os direitos reservados.</p>
