@@ -11,18 +11,14 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
     fs: {
       //allow: [".", "./client", "./shared", "./src"],
-      allow: ['...']
+      allow: ["..."],
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
     },
   },
   build: {
     outDir: "dist/spa",
   },
-  plugins: [
-    react(),
-    expressPlugin(),
-    mode === 'development' && componentTagger(),
-  ].filter(Boolean),
+  plugins: [react(), expressPlugin(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./client"),
