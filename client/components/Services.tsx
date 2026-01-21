@@ -1,51 +1,51 @@
-import { Scissors, Heart, Pill, Utensils, Zap, Smile } from "lucide-react";
+import { Stethoscope, Syringe, Scissors, Heart, TestTube, Bath } from "lucide-react";
 
 const services = [
   {
-    icon: Scissors,
-    title: "Grooming",
+    icon: Stethoscope,
+    title: "Consultas",
     description:
-      "Professional grooming services to keep your pet looking beautiful and healthy.",
+      "Consultas clínicas completas com veterinários especializados para diagnóstico e tratamento.",
     color: "coral",
     shadowColor: "shadow-neo-coral-md",
   },
   {
-    icon: Heart,
-    title: "Dog Care",
+    icon: Syringe,
+    title: "Vacinas",
     description:
-      "Comprehensive care including walking, training, and playtime for dogs.",
+      "Protocolo completo de vacinação para cães e gatos, mantendo seu pet protegido.",
     color: "purple",
     shadowColor: "shadow-neo-purple-md",
   },
   {
-    icon: Pill,
-    title: "Health Check",
+    icon: Heart,
+    title: "Cirurgias",
     description:
-      "Regular health checkups and wellness monitoring for your beloved pets.",
+      "Centro cirúrgico equipado para procedimentos eletivos e de emergência com segurança.",
     color: "blue",
     shadowColor: "shadow-neo-blue-md",
   },
   {
-    icon: Utensils,
-    title: "Nutrition",
+    icon: TestTube,
+    title: "Exames Laboratoriais",
     description:
-      "Expert dietary guidance and specialized nutrition plans for pet wellness.",
+      "Laboratório próprio com resultados rápidos para hemograma, bioquímico e mais.",
     color: "coral",
     shadowColor: "shadow-neo-coral-md",
   },
   {
-    icon: Zap,
-    title: "Training",
+    icon: Scissors,
+    title: "Banho e Tosa",
     description:
-      "Professional training programs to teach obedience and good behaviors.",
+      "Serviços de estética e higiene com profissionais carinhosos e experientes.",
     color: "purple",
     shadowColor: "shadow-neo-purple-md",
   },
   {
-    icon: Smile,
-    title: "Cat Care",
+    icon: Bath,
+    title: "Internação",
     description:
-      "Specialized care services designed specifically for cats and their unique needs.",
+      "UTI veterinária com monitoramento 24h para casos que necessitam de cuidados intensivos.",
     color: "blue",
     shadowColor: "shadow-neo-blue-md",
   },
@@ -63,11 +63,11 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-title font-bold text-3xl md:text-4xl lg:text-5xl text-dark-text mb-4">
-            Our Services
+            Nossos Serviços
           </h2>
           <p className="font-body text-lg text-dark-text opacity-70 max-w-2xl mx-auto">
-            Complete pet care solutions tailored to meet the unique needs of
-            your furry companions.
+            Cuidado veterinário completo para atender todas as necessidades do seu pet 
+            com amor e profissionalismo.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function Services() {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <div
+              <article
                 key={index}
                 className={`bg-white border-2 border-dark-text rounded-card p-8 flex flex-col items-center text-center group hover:shadow-neo-lg hover:translate-x-1 hover:translate-y-1 transition-all ${service.shadowColor}`}
               >
@@ -90,7 +90,7 @@ export default function Services() {
                 <p className="font-body text-dark-text opacity-70">
                   {service.description}
                 </p>
-              </div>
+              </article>
             );
           })}
         </div>

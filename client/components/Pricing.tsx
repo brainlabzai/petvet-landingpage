@@ -2,47 +2,47 @@ import { Check } from "lucide-react";
 
 const pricingPlans = [
   {
-    name: "Basic",
-    price: "$49",
-    period: "/month",
+    name: "Consulta Avulsa",
+    price: "R$ 180",
+    period: "/consulta",
     features: [
-      "Weekly grooming",
-      "Daily updates",
-      "Nutrition guidance",
-      "Emergency support",
+      "Consulta clínica completa",
+      "Orientações de saúde",
+      "Prescrição de medicamentos",
+      "Retorno gratuito em 7 dias",
     ],
     color: "bg-coral",
     shadowColor: "shadow-neo-coral-md",
     highlighted: false,
   },
   {
-    name: "Premium",
-    price: "$79",
-    period: "/month",
+    name: "Plano Saúde Pet",
+    price: "R$ 149",
+    period: "/mês",
     features: [
-      "Bi-weekly grooming",
-      "24/7 monitoring",
-      "Nutrition guidance",
-      "Training sessions",
-      "Emergency support",
-      "Health analytics",
+      "2 consultas mensais",
+      "Vacinas inclusas",
+      "10% off em exames",
+      "Atendimento prioritário",
+      "Desconto em banho e tosa",
+      "Suporte via WhatsApp",
     ],
     color: "bg-purple",
     shadowColor: "shadow-neo-purple-md",
     highlighted: true,
   },
   {
-    name: "VIP",
-    price: "$129",
-    period: "/month",
+    name: "Plano Premium",
+    price: "R$ 299",
+    period: "/mês",
     features: [
-      "Weekly grooming",
-      "24/7 monitoring",
-      "Custom nutrition",
-      "Training sessions",
-      "24/7 emergency care",
-      "Health analytics",
-      "Vet consultation",
+      "Consultas ilimitadas",
+      "Vacinas e vermífugos",
+      "Exames laboratoriais",
+      "1 banho e tosa/mês",
+      "Emergência 24h inclusa",
+      "Check-up anual completo",
+      "Internação com desconto",
     ],
     color: "bg-blue-500",
     shadowColor: "shadow-neo-blue-md",
@@ -56,16 +56,16 @@ export default function Pricing() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-title font-bold text-3xl md:text-4xl lg:text-5xl text-dark-text mb-4">
-            Simple and transparent pricing
+            Planos e Valores
           </h2>
           <p className="font-body text-lg text-dark-text opacity-70 max-w-2xl mx-auto">
-            Choose the plan that best fits your pet's needs.
+            Escolha o plano ideal para cuidar do seu pet com economia e qualidade.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {pricingPlans.map((plan, index) => (
-            <div
+            <article
               key={index}
               className={`bg-white border-2 border-dark-text rounded-card overflow-hidden flex flex-col ${plan.shadowColor} hover:shadow-neo-lg hover:translate-x-1 hover:translate-y-1 transition-all ${
                 plan.highlighted ? "ring-2 ring-dark-text" : ""
@@ -75,7 +75,7 @@ export default function Pricing() {
               <div
                 className={`${plan.color} text-white p-6 flex flex-col items-center`}
               >
-                <p className="font-body text-sm opacity-90 mb-2">Starting at</p>
+                <p className="font-body text-sm opacity-90 mb-2">A partir de</p>
                 <h3 className="font-title font-bold text-4xl">{plan.price}</h3>
                 <p className="font-body text-sm opacity-90">{plan.period}</p>
               </div>
@@ -83,7 +83,7 @@ export default function Pricing() {
               {/* Plan Details */}
               <div className="flex-grow p-6 flex flex-col">
                 <h3 className="font-title font-bold text-2xl text-dark-text mb-6">
-                  {plan.name} Plan
+                  {plan.name}
                 </h3>
 
                 {/* Features List */}
@@ -104,10 +104,10 @@ export default function Pricing() {
                   href="#contact"
                   className="mt-8 w-full text-center font-title font-bold px-6 py-3 bg-dark-text text-white border-2 border-dark-text rounded-btn shadow-neo-sm hover:shadow-neo-md hover:translate-x-0.5 hover:translate-y-0.5 transition-all"
                 >
-                  Contact us
+                  Contratar
                 </a>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
