@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import cachorroDuvida from "@/assets/cachorro-duvida.jpg";
+import cachorroDuvida from "@/assets/cachorro-duvida.png";
 
 const faqs = [
   {
