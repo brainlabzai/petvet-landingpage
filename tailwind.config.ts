@@ -2,20 +2,17 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: ["./client/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
     container: {
       center: true,
-      padding: "1.5rem",
+      padding: "2rem",
       screens: {
-        "2xl": "1280px",
+        "2xl": "1400px",
       },
     },
     extend: {
-      fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -50,32 +47,67 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        whatsapp: {
-          DEFAULT: "hsl(var(--whatsapp))",
-          foreground: "hsl(var(--whatsapp-foreground))",
+        sidebar: {
+          DEFAULT: "hsl(var(--sidebar-background))",
+          foreground: "hsl(var(--sidebar-foreground))",
+          primary: "hsl(var(--sidebar-primary))",
+          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+          accent: "hsl(var(--sidebar-accent))",
+          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+          border: "hsl(var(--sidebar-border))",
+          ring: "hsl(var(--sidebar-ring))",
         },
+        // Pebo custom colors
+        cream: "hsl(var(--cream))",
+        coral: "hsl(var(--coral))",
+        purple: "hsl(var(--purple))",
+        "dark-text": "hsl(var(--dark-text))",
+        yellow: {
+          300: "#FFE64D",
+          400: "#FFD700",
+        },
+        blue: {
+          500: "#2563EB",
+        },
+      },
+      fontFamily: {
+        title: ["Outfit", "Lexend", "sans-serif"],
+        body: ["Inter", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        card: "24px",
+        btn: "12px",
       },
       boxShadow: {
-        'card': 'var(--card-shadow)',
-        'card-hover': 'var(--card-shadow-hover)',
-      },
-      backgroundImage: {
-        'hero-gradient': 'var(--hero-gradient)',
-        'cta-gradient': 'var(--cta-gradient)',
+        "neo-sm": "2px 2px 0px hsl(var(--accent-shadow))",
+        "neo-md": "4px 4px 0px hsl(var(--accent-shadow))",
+        "neo-lg": "6px 6px 0px hsl(var(--accent-shadow))",
+        "neo-coral-sm": "2px 2px 0px hsl(var(--coral))",
+        "neo-coral-md": "4px 4px 0px hsl(var(--coral))",
+        "neo-purple-sm": "2px 2px 0px hsl(var(--purple))",
+        "neo-purple-md": "4px 4px 0px hsl(var(--purple))",
+        "neo-blue-sm": "2px 2px 0px hsl(var(--blue))",
+        "neo-blue-md": "4px 4px 0px hsl(var(--blue))",
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
+          from: {
+            height: "0",
+          },
+          to: {
+            height: "var(--radix-accordion-content-height)",
+          },
         },
         "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+          from: {
+            height: "var(--radix-accordion-content-height)",
+          },
+          to: {
+            height: "0",
+          },
         },
       },
       animation: {
