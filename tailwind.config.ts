@@ -87,10 +87,13 @@ export default {
         "neo-lg": "6px 6px 0px hsl(var(--accent-shadow))",
         "neo-coral-sm": "2px 2px 0px hsl(var(--coral))",
         "neo-coral-md": "4px 4px 0px hsl(var(--coral))",
+        "neo-coral-lg": "6px 6px 0px hsl(var(--coral))",
         "neo-purple-sm": "2px 2px 0px hsl(var(--purple))",
         "neo-purple-md": "4px 4px 0px hsl(var(--purple))",
+        "neo-purple-lg": "6px 6px 0px hsl(var(--purple))",
         "neo-blue-sm": "2px 2px 0px hsl(var(--blue))",
         "neo-blue-md": "4px 4px 0px hsl(var(--blue))",
+        "neo-blue-lg": "6px 6px 0px hsl(var(--blue))",
       },
       keyframes: {
         "accordion-down": {

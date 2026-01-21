@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import mulherCachorro from "@/assets/mulher-cachorro.jpg";
+import mulherCachorro from "@/assets/mulher-cachorro.png";
 
 const benefits = [
   "Equipe de veterinários especializados e certificados",
