@@ -1,51 +1,51 @@
-import { Scissors, Heart, Pill, Utensils, Zap, Smile } from "lucide-react";
+import { Stethoscope, Syringe, Scissors, HeartPulse, FlaskConical, Bath } from "lucide-react";
 
 const services = [
   {
-    icon: Scissors,
-    title: "Grooming",
+    icon: Stethoscope,
+    title: "Consultas Veterinárias",
     description:
-      "Professional grooming services to keep your pet looking beautiful and healthy.",
+      "Atendimento clínico completo para cães, gatos e animais exóticos com veterinários especializados.",
     color: "coral",
     shadowColor: "shadow-neo-coral-md",
   },
   {
-    icon: Heart,
-    title: "Dog Care",
+    icon: Syringe,
+    title: "Vacinas e Vermífugos",
     description:
-      "Comprehensive care including walking, training, and playtime for dogs.",
+      "Protocolo de vacinação completo e prevenção de parasitas para manter seu pet protegido.",
     color: "purple",
     shadowColor: "shadow-neo-purple-md",
   },
   {
-    icon: Pill,
-    title: "Health Check",
+    icon: HeartPulse,
+    title: "Cirurgias",
     description:
-      "Regular health checkups and wellness monitoring for your beloved pets.",
+      "Centro cirúrgico moderno para procedimentos eletivos e de emergência com anestesia segura.",
     color: "blue",
     shadowColor: "shadow-neo-blue-md",
   },
   {
-    icon: Utensils,
-    title: "Nutrition",
+    icon: FlaskConical,
+    title: "Exames Laboratoriais",
     description:
-      "Expert dietary guidance and specialized nutrition plans for pet wellness.",
+      "Laboratório próprio com resultados rápidos: hemograma, bioquímico, urinálise e mais.",
     color: "coral",
     shadowColor: "shadow-neo-coral-md",
   },
   {
-    icon: Zap,
-    title: "Training",
+    icon: Scissors,
+    title: "Internação 24h",
     description:
-      "Professional training programs to teach obedience and good behaviors.",
+      "UTI veterinária com monitoramento contínuo e cuidados intensivos para casos críticos.",
     color: "purple",
     shadowColor: "shadow-neo-purple-md",
   },
   {
-    icon: Smile,
-    title: "Cat Care",
+    icon: Bath,
+    title: "Banho e Tosa",
     description:
-      "Specialized care services designed specifically for cats and their unique needs.",
+      "Serviços de estética pet com produtos premium e profissionais qualificados.",
     color: "blue",
     shadowColor: "shadow-neo-blue-md",
   },
@@ -63,11 +63,10 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-title font-bold text-3xl md:text-4xl lg:text-5xl text-dark-text mb-4">
-            Our Services
+            Serviços Veterinários em Moema
           </h2>
           <p className="font-body text-lg text-dark-text opacity-70 max-w-2xl mx-auto">
-            Complete pet care solutions tailored to meet the unique needs of
-            your furry companions.
+            Estrutura completa para cuidar da saúde do seu pet com excelência e carinho.
           </p>
         </div>
 

@@ -1,4 +1,5 @@
 import { Phone, ArrowRight } from "lucide-react";
+import cachorroEGato from "@/assets/cachorro-e-gato.jpg";
 
 export default function Hero() {
   return (
@@ -9,24 +10,24 @@ export default function Hero() {
           <div className="space-y-8">
             <div>
               <h1 className="font-title font-bold text-4xl md:text-5xl lg:text-6xl text-dark-text leading-tight mb-4">
-                Health and happiness for your beloved
+                Clínica Veterinária 24h em Moema, São Paulo
               </h1>
               <p className="font-body text-lg text-dark-text opacity-80 leading-relaxed">
-                Comprehensive care solutions for your furry friends. From
-                grooming to training, we provide premium pet care services with
-                love and expertise.
+                Cuidado completo para seu pet com amor e expertise. Consultas, 
+                vacinas, exames, cirurgias e atendimento de emergência 24 horas. 
+                Sua clínica veterinária de confiança em Moema.
               </p>
             </div>
 
             {/* Phone Link */}
             <a
-              href="tel:+1234567890"
+              href="tel:+5511999999999"
               className="inline-flex items-center gap-3 font-body text-coral hover:text-dark-text transition-colors group"
             >
               <div className="w-10 h-10 bg-coral text-white rounded-full flex items-center justify-center border-2 border-dark-text shadow-neo-sm group-hover:shadow-neo-md transition-all">
                 <Phone className="w-5 h-5" />
               </div>
-              <span className="font-semibold">+1 (234) 567-890</span>
+              <span className="font-semibold">(11) 99999-9999</span>
             </a>
 
             {/* CTA Button */}
@@ -34,24 +35,21 @@ export default function Hero() {
               href="#services"
               className="inline-flex items-center gap-2 font-title font-bold px-8 py-4 bg-coral text-white border-2 border-dark-text rounded-btn shadow-neo-md hover:shadow-neo-lg hover:translate-x-1 hover:translate-y-1 transition-all group"
             >
-              Our services
+              Nossos Serviços
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
 
-          {/* Right Column - Image Placeholder */}
+          {/* Right Column - Image */}
           <div className="relative h-96 md:h-full min-h-96">
             {/* Yellow circular background */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-80 h-80 md:w-96 md:h-96 bg-yellow-300 rounded-full border-4 border-dark-text shadow-neo-lg"></div>
-            </div>
-
-            {/* Placeholder text in circular area */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center z-10">
-                <div className="text-sm font-body text-dark-text opacity-60 mt-4">
-                  Hero Image Here
-                </div>
+              <div className="w-80 h-80 md:w-96 md:h-96 bg-yellow-300 rounded-full border-4 border-dark-text shadow-neo-lg overflow-hidden">
+                <img 
+                  src={cachorroEGato} 
+                  alt="Cachorro e gato felizes na clínica veterinária PetVet Moema" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

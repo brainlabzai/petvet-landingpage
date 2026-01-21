@@ -4,37 +4,38 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import cachorroDuvida from "@/assets/cachorro-duvida.jpg";
 
 const faqs = [
   {
-    question: "How often can I visit my pet?",
+    question: "A PetVet atende emergências 24 horas?",
     answer:
-      "You can visit your pet anytime during our business hours. We also provide daily updates through our app and photos to keep you connected.",
+      "Sim! Nossa clínica veterinária em Moema funciona 24 horas por dia, 7 dias por semana, incluindo feriados. Estamos sempre prontos para atender emergências.",
   },
   {
-    question: "What is your emergency procedure?",
+    question: "Quais formas de pagamento são aceitas?",
     answer:
-      "We have 24/7 emergency support. In case of any health concerns, we immediately contact our veterinary partners and keep you informed every step of the way.",
+      "Aceitamos cartões de crédito e débito, PIX, transferência bancária e dinheiro. Também oferecemos parcelamento em até 12x para procedimentos mais complexos.",
   },
   {
-    question: "Do you offer customized nutrition plans?",
+    question: "Preciso agendar consulta ou posso ir direto?",
     answer:
-      "Yes! Our nutrition experts create personalized meal plans based on your pet's age, weight, health conditions, and preferences.",
+      "Recomendamos o agendamento para consultas de rotina, garantindo seu horário. Para emergências, atendemos por ordem de chegada e prioridade clínica.",
   },
   {
-    question: "Are your facilities safe and clean?",
+    question: "A clínica atende animais exóticos?",
     answer:
-      "Absolutely. We maintain the highest hygiene standards and security protocols. Our facilities are regularly inspected and exceed all safety requirements.",
+      "Sim! Além de cães e gatos, atendemos coelhos, hamsters, aves e outros animais de estimação. Consulte nossa equipe sobre espécies específicas.",
   },
   {
-    question: "Can you handle pets with special needs?",
+    question: "Como funciona a internação?",
     answer:
-      "Yes, we specialize in caring for pets with special medical needs, behavioral issues, and elderly pets. We have certified trainers and veterinary specialists on staff.",
+      "Nossa internação conta com monitoramento 24h, UTI veterinária e equipe especializada. Enviamos atualizações diárias sobre o estado do pet e você pode visitar em horários determinados.",
   },
   {
-    question: "How do I get started?",
+    question: "Vocês oferecem planos de saúde pet?",
     answer:
-      "Simply fill out our contact form or call us. We'll schedule a consultation to discuss your pet's needs and find the perfect plan for them.",
+      "Sim! Temos planos mensais que incluem consultas, vacinas, exames e descontos em procedimentos. Confira nossa seção de planos para mais detalhes.",
   },
 ];
 
@@ -44,19 +45,19 @@ export default function FAQ() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-title font-bold text-3xl md:text-4xl lg:text-5xl text-dark-text mb-4">
-            Frequently Asked Questions
+            Perguntas Frequentes
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {/* Left Column - Image Placeholder */}
+          {/* Left Column - Image */}
           <div className="hidden md:flex items-center justify-center relative h-96">
-            <div className="w-80 h-80 bg-yellow-300 rounded-full border-4 border-dark-text shadow-neo-lg flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-sm font-body text-dark-text opacity-60">
-                  FAQ Image Placeholder
-                </div>
-              </div>
+            <div className="w-80 h-80 bg-yellow-300 rounded-full border-4 border-dark-text shadow-neo-lg overflow-hidden">
+              <img 
+                src={cachorroDuvida} 
+                alt="Cachorro curioso esperando resposta sobre serviços veterinários PetVet" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
