@@ -22,32 +22,32 @@ const services = [
     title: "Cirurgias",
     description:
       "Centro cirúrgico moderno para procedimentos eletivos e de emergência com anestesia segura.",
-    color: "blue",
-    shadowColor: "shadow-neo-blue-md",
+    color: "coral",
+    shadowColor: "shadow-neo-coral-md",
   },
   {
     icon: FlaskConical,
     title: "Exames Laboratoriais",
     description:
       "Laboratório próprio com resultados rápidos: hemograma, bioquímico, urinálise e mais.",
-    color: "coral",
-    shadowColor: "shadow-neo-coral-md",
+    color: "purple",
+    shadowColor: "shadow-neo-purple-md",
   },
   {
     icon: Scissors,
     title: "Internação 24h",
     description:
       "UTI veterinária com monitoramento contínuo e cuidados intensivos para casos críticos.",
-    color: "purple",
-    shadowColor: "shadow-neo-purple-md",
+    color: "coral",
+    shadowColor: "shadow-neo-coral-md",
   },
   {
     icon: Bath,
     title: "Banho e Tosa",
     description:
       "Serviços de estética pet com produtos premium e profissionais qualificados.",
-    color: "blue",
-    shadowColor: "shadow-neo-blue-md",
+    color: "purple",
+    shadowColor: "shadow-neo-purple-md",
   },
 ];
 

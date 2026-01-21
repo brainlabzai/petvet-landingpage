@@ -26,7 +26,7 @@ export default function Hero() {
             </a>
 
             {/* CTA Button - extra spacing from phone */}
-            <div className="pt-4">
+            <div className="pt-8 md:pt-10">
               <a href="#services" className="inline-flex items-center gap-2 font-title font-bold px-8 py-4 bg-coral text-white border-2 border-dark-text rounded-btn shadow-neo-md hover:shadow-neo-lg hover:translate-x-1 hover:translate-y-1 transition-all group">
                 Nossos Serviços
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

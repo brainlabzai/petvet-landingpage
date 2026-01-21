@@ -19,15 +19,15 @@ const teamMembers = [
     name: "Dra. Beatriz Lima",
     role: "Clínica Geral",
     initials: "BL",
-    color: "bg-blue-500",
-    shadowColor: "shadow-neo-blue-md",
+    color: "bg-coral",
+    shadowColor: "shadow-neo-coral-md",
   },
   {
     name: "Dr. Fernando Souza",
     role: "Emergencista",
     initials: "FS",
-    color: "bg-coral",
-    shadowColor: "shadow-neo-coral-md",
+    color: "bg-purple",
+    shadowColor: "shadow-neo-purple-md",
   },
 ];
 
