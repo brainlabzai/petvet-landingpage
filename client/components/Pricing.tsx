@@ -44,8 +44,8 @@ const pricingPlans = [
       "Internação com desconto",
       "Check-up anual completo",
     ],
-    color: "bg-blue-500",
-    shadowColor: "shadow-neo-blue-md",
+    color: "bg-coral",
+    shadowColor: "shadow-neo-coral-md",
     highlighted: false,
   },
 ];
