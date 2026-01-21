@@ -8,24 +8,20 @@ import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export default function Index() {
   return (
     <div className="bg-cream">
       <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <Benefits />
-        <Testimonials />
-        <Team />
-        <Pricing />
-        <FAQ />
-        <ContactForm />
-      </main>
+      <Hero />
+      <Services />
+      <Benefits />
+      <Testimonials />
+      <Team />
+      <Pricing />
+      <FAQ />
+      <ContactForm />
       <Footer />
-      <FloatingWhatsApp />
     </div>
   );
 }

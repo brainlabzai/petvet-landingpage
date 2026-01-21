@@ -1,31 +1,31 @@
-import { Instagram, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Dra. Marina Costa",
-    role: "Diretora Clínica",
-    initials: "MC",
+    name: "Dr. Emily Watson",
+    role: "Veterinary Director",
+    initials: "EW",
     color: "bg-coral",
     shadowColor: "shadow-neo-coral-md",
   },
   {
-    name: "Dr. Paulo Henrique",
-    role: "Cirurgião Veterinário",
-    initials: "PH",
+    name: "Marcus Johnson",
+    role: "Lead Groomer",
+    initials: "MJ",
     color: "bg-purple",
     shadowColor: "shadow-neo-purple-md",
   },
   {
-    name: "Dra. Juliana Reis",
-    role: "Dermatologista Veterinária",
-    initials: "JR",
+    name: "Lisa Chen",
+    role: "Pet Trainer",
+    initials: "LC",
     color: "bg-blue-500",
     shadowColor: "shadow-neo-blue-md",
   },
   {
-    name: "Carlos Eduardo",
-    role: "Groomer Especialista",
-    initials: "CE",
+    name: "David Rodriguez",
+    role: "Care Specialist",
+    initials: "DR",
     color: "bg-coral",
     shadowColor: "shadow-neo-coral-md",
   },
@@ -37,17 +37,17 @@ export default function Team() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-title font-bold text-3xl md:text-4xl lg:text-5xl text-dark-text mb-4">
-            Conheça nossa equipe
+            Meet our team
           </h2>
           <p className="font-body text-lg text-dark-text opacity-70 max-w-2xl mx-auto">
-            Profissionais experientes e apaixonados por animais, dedicados à 
-            saúde e bem-estar do seu pet.
+            Experienced professionals dedicated to your pet's health and
+            happiness.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {teamMembers.map((member, index) => (
-            <article
+            <div
               key={index}
               className={`bg-white border-2 border-dark-text rounded-card p-6 flex flex-col items-center text-center ${member.shadowColor} hover:shadow-neo-lg hover:translate-x-1 hover:translate-y-1 transition-all`}
             >
@@ -73,9 +73,23 @@ export default function Team() {
                 <a
                   href="#"
                   className="p-2 rounded-full bg-gray-100 hover:bg-coral hover:text-white border-2 border-dark-text transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-4 h-4" />
+                </a>
+                <a
+                  href="#"
+                  className="p-2 rounded-full bg-gray-100 hover:bg-coral hover:text-white border-2 border-dark-text transition-colors"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-4 h-4" />
+                </a>
+                <a
+                  href="#"
+                  className="p-2 rounded-full bg-gray-100 hover:bg-coral hover:text-white border-2 border-dark-text transition-colors"
+                  aria-label="Twitter"
+                >
+                  <Twitter className="w-4 h-4" />
                 </a>
                 <a
                   href="#"
@@ -85,7 +99,7 @@ export default function Team() {
                   <Linkedin className="w-4 h-4" />
                 </a>
               </div>
-            </article>
+            </div>
           ))}
         </div>
       </div>

@@ -1,16 +1,15 @@
 import { useState } from "react";
-import { Menu, X, Phone } from "lucide-react";
-import logoPetVet from "@/assets/logo-petvet.png";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { label: "Serviços", href: "#services" },
-    { label: "Diferenciais", href: "#features" },
-    { label: "Depoimentos", href: "#testimonials" },
-    { label: "Equipe", href: "#team" },
-    { label: "Planos", href: "#pricing" },
+    { label: "Services", href: "#services" },
+    { label: "Features", href: "#features" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Team", href: "#team" },
+    { label: "Pricing", href: "#pricing" },
   ];
 
   return (
@@ -18,15 +17,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <img 
-              src={logoPetVet} 
-              alt="PetVet Logo" 
-              className="w-10 h-10 object-contain"
-            />
-            <span className="font-title font-bold text-2xl text-dark-text">
-              PetVet
-            </span>
+          <a href="#" className="font-title font-bold text-2xl text-dark-text">
+            PEBO
           </a>
 
           {/* Desktop Navigation */}
@@ -43,19 +35,12 @@ export default function Navbar() {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center gap-4">
-            <a
-              href="tel:+5511999999999"
-              className="flex items-center gap-2 font-body text-dark-text hover:text-coral transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              <span className="font-semibold">(11) 99999-9999</span>
-            </a>
+          <div className="hidden md:block">
             <a
               href="#contact"
               className="inline-flex items-center justify-center font-title font-semibold px-6 py-3 bg-coral text-white border-2 border-dark-text rounded-btn shadow-neo-sm hover:shadow-neo-md hover:translate-x-0.5 hover:translate-y-0.5 transition-all"
             >
-              Agendar Consulta
+              Make an appointment
             </a>
           </div>
 
@@ -63,7 +48,7 @@ export default function Navbar() {
           <button
             className="md:hidden p-2"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Abrir menu"
+            aria-label="Toggle menu"
           >
             {isOpen ? (
               <X className="w-6 h-6 text-dark-text" />
@@ -87,19 +72,11 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="tel:+5511999999999"
-              className="flex items-center gap-2 py-2 font-body text-dark-text hover:text-coral transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              <Phone className="w-4 h-4" />
-              <span>(11) 99999-9999</span>
-            </a>
-            <a
               href="#contact"
               className="mt-4 block w-full text-center font-title font-semibold px-6 py-3 bg-coral text-white border-2 border-dark-text rounded-btn shadow-neo-sm transition-all"
               onClick={() => setIsOpen(false)}
             >
-              Agendar Consulta
+              Make an appointment
             </a>
           </div>
         )}
