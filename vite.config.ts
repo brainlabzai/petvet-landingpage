@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
     fs: {
       //allow: [".", "./client", "./shared", "./src"],
-      allow: ["..."],
+      allow: [".."],
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
     },
   },
