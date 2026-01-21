@@ -2,30 +2,30 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Dr. Emily Watson",
-    role: "Veterinary Director",
-    initials: "EW",
+    name: "Dra. Ana Paula Oliveira",
+    role: "Diretora Clínica",
+    initials: "AO",
     color: "bg-coral",
     shadowColor: "shadow-neo-coral-md",
   },
   {
-    name: "Marcus Johnson",
-    role: "Lead Groomer",
-    initials: "MJ",
+    name: "Dr. Carlos Eduardo",
+    role: "Cirurgião Veterinário",
+    initials: "CE",
     color: "bg-purple",
     shadowColor: "shadow-neo-purple-md",
   },
   {
-    name: "Lisa Chen",
-    role: "Pet Trainer",
-    initials: "LC",
+    name: "Dra. Beatriz Lima",
+    role: "Clínica Geral",
+    initials: "BL",
     color: "bg-blue-500",
     shadowColor: "shadow-neo-blue-md",
   },
   {
-    name: "David Rodriguez",
-    role: "Care Specialist",
-    initials: "DR",
+    name: "Dr. Fernando Souza",
+    role: "Emergencista",
+    initials: "FS",
     color: "bg-coral",
     shadowColor: "shadow-neo-coral-md",
   },
@@ -37,11 +37,10 @@ export default function Team() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-title font-bold text-3xl md:text-4xl lg:text-5xl text-dark-text mb-4">
-            Meet our team
+            Nossa Equipe Veterinária
           </h2>
           <p className="font-body text-lg text-dark-text opacity-70 max-w-2xl mx-auto">
-            Experienced professionals dedicated to your pet's health and
-            happiness.
+            Profissionais qualificados e apaixonados por animais, dedicados à saúde do seu pet.
           </p>
         </div>
 

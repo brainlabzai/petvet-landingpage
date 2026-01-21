@@ -7,8 +7,8 @@ export default function ContactForm() {
     petName: "",
     email: "",
     phone: "",
-    petType: "dog",
-    service: "grooming",
+    petType: "cachorro",
+    service: "consulta",
     message: "",
     videoCall: false,
   });
@@ -28,15 +28,15 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    console.log("Formulário enviado:", formData);
     // Reset form
     setFormData({
       name: "",
       petName: "",
       email: "",
       phone: "",
-      petType: "dog",
-      service: "grooming",
+      petType: "cachorro",
+      service: "consulta",
       message: "",
       videoCall: false,
     });
@@ -47,11 +47,10 @@ export default function ContactForm() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-title font-bold text-3xl md:text-4xl lg:text-5xl text-dark-text mb-4">
-            Get in touch
+            Agende sua Consulta
           </h2>
           <p className="font-body text-lg text-dark-text opacity-70">
-            Fill out the form below and we'll get back to you as soon as
-            possible.
+            Preencha o formulário abaixo e entraremos em contato o mais rápido possível.
           </p>
         </div>
 
@@ -66,7 +65,7 @@ export default function ContactForm() {
                 htmlFor="name"
                 className="block font-title font-semibold text-dark-text mb-2"
               >
-                Your Name
+                Seu Nome
               </label>
               <input
                 type="text"
@@ -76,7 +75,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 border-2 border-dark-text rounded-btn font-body focus:outline-none focus:ring-2 focus:ring-coral focus:ring-offset-2"
-                placeholder="John Doe"
+                placeholder="Maria Silva"
               />
             </div>
 
@@ -86,7 +85,7 @@ export default function ContactForm() {
                 htmlFor="petName"
                 className="block font-title font-semibold text-dark-text mb-2"
               >
-                Pet Name
+                Nome do Pet
               </label>
               <input
                 type="text"
@@ -96,7 +95,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 border-2 border-dark-text rounded-btn font-body focus:outline-none focus:ring-2 focus:ring-coral focus:ring-offset-2"
-                placeholder="Max"
+                placeholder="Thor"
               />
             </div>
 
@@ -106,7 +105,7 @@ export default function ContactForm() {
                 htmlFor="email"
                 className="block font-title font-semibold text-dark-text mb-2"
               >
-                Email
+                E-mail
               </label>
               <input
                 type="email"
@@ -116,7 +115,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 border-2 border-dark-text rounded-btn font-body focus:outline-none focus:ring-2 focus:ring-coral focus:ring-offset-2"
-                placeholder="john@example.com"
+                placeholder="maria@email.com"
               />
             </div>
 
@@ -126,7 +125,7 @@ export default function ContactForm() {
                 htmlFor="phone"
                 className="block font-title font-semibold text-dark-text mb-2"
               >
-                Phone
+                Telefone/WhatsApp
               </label>
               <input
                 type="tel"
@@ -136,7 +135,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 border-2 border-dark-text rounded-btn font-body focus:outline-none focus:ring-2 focus:ring-coral focus:ring-offset-2"
-                placeholder="+1 (234) 567-890"
+                placeholder="(11) 99999-9999"
               />
             </div>
 
@@ -146,7 +145,7 @@ export default function ContactForm() {
                 htmlFor="petType"
                 className="block font-title font-semibold text-dark-text mb-2"
               >
-                Pet Type
+                Tipo de Pet
               </label>
               <select
                 id="petType"
@@ -155,12 +154,12 @@ export default function ContactForm() {
                 onChange={handleChange}
                 className="w-full px-4 py-3 border-2 border-dark-text rounded-btn font-body focus:outline-none focus:ring-2 focus:ring-coral focus:ring-offset-2 bg-white"
               >
-                <option value="dog">Dog</option>
-                <option value="cat">Cat</option>
-                <option value="rabbit">Rabbit</option>
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+                <option value="coelho">Coelho</option>
                 <option value="hamster">Hamster</option>
-                <option value="bird">Bird</option>
-                <option value="other">Other</option>
+                <option value="ave">Ave</option>
+                <option value="outro">Outro</option>
               </select>
             </div>
 
@@ -170,7 +169,7 @@ export default function ContactForm() {
                 htmlFor="service"
                 className="block font-title font-semibold text-dark-text mb-2"
               >
-                Service
+                Serviço Desejado
               </label>
               <select
                 id="service"
@@ -179,12 +178,12 @@ export default function ContactForm() {
                 onChange={handleChange}
                 className="w-full px-4 py-3 border-2 border-dark-text rounded-btn font-body focus:outline-none focus:ring-2 focus:ring-coral focus:ring-offset-2 bg-white"
               >
-                <option value="grooming">Grooming</option>
-                <option value="training">Training</option>
-                <option value="daycare">Daycare</option>
-                <option value="boarding">Boarding</option>
-                <option value="health-check">Health Check</option>
-                <option value="nutrition">Nutrition Consultation</option>
+                <option value="consulta">Consulta Veterinária</option>
+                <option value="vacina">Vacinas</option>
+                <option value="exame">Exames</option>
+                <option value="cirurgia">Cirurgia</option>
+                <option value="emergencia">Emergência</option>
+                <option value="banho-tosa">Banho e Tosa</option>
               </select>
             </div>
           </div>
@@ -195,7 +194,7 @@ export default function ContactForm() {
               htmlFor="message"
               className="block font-title font-semibold text-dark-text mb-2"
             >
-              Message
+              Mensagem (opcional)
             </label>
             <textarea
               id="message"
@@ -204,7 +203,7 @@ export default function ContactForm() {
               onChange={handleChange}
               rows={4}
               className="w-full px-4 py-3 border-2 border-dark-text rounded-btn font-body focus:outline-none focus:ring-2 focus:ring-coral focus:ring-offset-2 resize-none"
-              placeholder="Tell us more about your pet and what services you're interested in..."
+              placeholder="Conte-nos mais sobre seu pet e o motivo da consulta..."
             />
           </div>
 
@@ -222,7 +221,7 @@ export default function ContactForm() {
               htmlFor="videoCall"
               className="font-body text-dark-text cursor-pointer flex-1"
             >
-              Schedule a video call consultation
+              Desejo receber contato por WhatsApp
             </label>
           </div>
 
@@ -231,7 +230,7 @@ export default function ContactForm() {
             type="submit"
             className="w-full inline-flex items-center justify-center gap-2 font-title font-bold px-8 py-4 bg-coral text-white border-2 border-dark-text rounded-btn shadow-neo-md hover:shadow-neo-lg hover:translate-x-1 hover:translate-y-1 transition-all"
           >
-            Send Message
+            Enviar Solicitação
             <Send className="w-5 h-5" />
           </button>
         </form>

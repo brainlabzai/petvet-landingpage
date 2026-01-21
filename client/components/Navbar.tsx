@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoPetvet from "@/assets/logo-petvet.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { label: "Services", href: "#services" },
-    { label: "Features", href: "#features" },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "Team", href: "#team" },
-    { label: "Pricing", href: "#pricing" },
+    { label: "Serviços", href: "#services" },
+    { label: "Diferenciais", href: "#features" },
+    { label: "Depoimentos", href: "#testimonials" },
+    { label: "Equipe", href: "#team" },
+    { label: "Planos", href: "#pricing" },
   ];
 
   return (
@@ -17,8 +18,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <a href="#" className="font-title font-bold text-2xl text-dark-text">
-            PEBO
+          <a href="#" className="flex items-center gap-2">
+            <img 
+              src={logoPetvet} 
+              alt="Logo PetVet - Clínica Veterinária em Moema" 
+              className="w-10 h-10 object-contain"
+            />
+            <span className="font-title font-bold text-2xl text-dark-text">
+              PetVet
+            </span>
           </a>
 
           {/* Desktop Navigation */}
@@ -40,7 +48,7 @@ export default function Navbar() {
               href="#contact"
               className="inline-flex items-center justify-center font-title font-semibold px-6 py-3 bg-coral text-white border-2 border-dark-text rounded-btn shadow-neo-sm hover:shadow-neo-md hover:translate-x-0.5 hover:translate-y-0.5 transition-all"
             >
-              Make an appointment
+              Agendar Consulta
             </a>
           </div>
 
@@ -48,7 +56,7 @@ export default function Navbar() {
           <button
             className="md:hidden p-2"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+            aria-label="Abrir menu"
           >
             {isOpen ? (
               <X className="w-6 h-6 text-dark-text" />
@@ -76,7 +84,7 @@ export default function Navbar() {
               className="mt-4 block w-full text-center font-title font-semibold px-6 py-3 bg-coral text-white border-2 border-dark-text rounded-btn shadow-neo-sm transition-all"
               onClick={() => setIsOpen(false)}
             >
-              Make an appointment
+              Agendar Consulta
             </a>
           </div>
         )}
